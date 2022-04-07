@@ -1,5 +1,5 @@
-Milk
-Bread
-Cheese
-Eggs
-Yogurt
+Milk x 2
+Bread x 2
+Cheese x 1
+Eggs x 5
+Yogurt x 3
