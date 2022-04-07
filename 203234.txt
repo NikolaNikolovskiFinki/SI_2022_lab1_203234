@@ -2,3 +2,46 @@
 git clone https://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@github.com/NikolaNikolovskiFinki/SI_2022_lab1_203234.git
 
 бидејќи репозиториумот е поставен private, потребно беше да направам токен и да го поставам пред @github.com/
+
+5. git add .
+   git commit -m "Add 5 items to the shopping list"
+
+6. git add.
+   git commit -m "Add quantities to the items."
+
+
+7. git branch branch1
+   git branch branch2
+
+
+8. git log
+commit 3e639d1ad4cd302c92ad60947c6a079af9f15c29 (HEAD -> master, branch2, branch1)
+Author: NikolaNikolovskiFinki <nikola.nikolovski.2@students.finki.ukim.mk>
+Date:   Thu Apr 7 17:32:57 2022 +0200
+
+    Add quantities to the items.
+
+commit 8765badb16d741ea4fdc1699b849a99a4d4b3afc
+Author: NikolaNikolovskiFinki <nikola.nikolovski.2@students.finki.ukim.mk>
+Date:   Thu Apr 7 17:29:04 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 60ed237b2af0a1aae1276057ddd5331ee2e1eb8b (origin/master, origin/HEAD)
+Author: NikolaNikolovskiFinki <103200637+NikolaNikolovskiFinki@users.noreply.github.com>
+Date:   Thu Apr 7 16:51:49 2022 +0200
+
+    updated readme file
+
+commit dbcd89ce5185f3523203cddcdd3fcff9e3da1d68
+Author: NikolaNikolovskiFinki <103200637+NikolaNikolovskiFinki@users.noreply.github.com>
+Date:   Thu Apr 7 16:49:19 2022 +0200
+
+    Initial commit
+
+
+
+9. git push origin branch1
+   git push origin branch2
+
+10. git checkout branch1
