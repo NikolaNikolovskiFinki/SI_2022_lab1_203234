@@ -3,18 +3,18 @@ git clone https://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@github.com/NikolaNiko
 
 бидејќи репозиториумот е поставен private, потребно беше да направам токен и да го поставам пред @github.com/
 
-5. git add .
+5. git add .    //сите фајлови ке бидат во staging area
    git commit -m "Add 5 items to the shopping list"
 
-6. git add.
+6. git add.  //сите фајлови ке бидат во staging area
    git commit -m "Add quantities to the items."
 
 
-7. git branch branch1
-   git branch branch2
+7. git branch branch1   //креирање branch со име branch1
+   git branch branch2   //креирање branch со име branch2
 
 
-8. git log
+8. git log    //ја листа историјата на сите commits
 commit 3e639d1ad4cd302c92ad60947c6a079af9f15c29 (HEAD -> master, branch2, branch1)
 Author: NikolaNikolovskiFinki <nikola.nikolovski.2@students.finki.ukim.mk>
 Date:   Thu Apr 7 17:32:57 2022 +0200
@@ -41,7 +41,96 @@ Date:   Thu Apr 7 16:49:19 2022 +0200
 
 
 
-9. git push origin branch1
+9. git push origin branch1   //креирање гранка на ремоте репото origin
    git push origin branch2
 
-10. git checkout branch1
+10. git checkout branch1   //префрлање на гранката branch1
+
+11. git add .  //сите фајлови ке бидат во staging area
+    git commit -m "Change quantity of item #5"
+
+12. git checkout master    //префрлање на гранката master
+
+13. git commit -a -m "Change quantity of item #2"    
+
+14. git push origin branch1
+    git push origin branch2
+
+15. git checkout branch2  //префрлање на гранката branch2
+
+16. git commit -a -m "Modify item #4"
+
+17. git log   //ја листа историјата на сите commits
+commit e6b342f9b4ad56c22e22b3e428d2ab274c6fbc0a (HEAD -> branch2)
+Author: NikolaNikolovskiFinki <nikola.nikolovski.2@students.finki.ukim.mk>
+Date:   Thu Apr 7 18:21:40 2022 +0200
+
+    Modify item #4
+
+commit 3e639d1ad4cd302c92ad60947c6a079af9f15c29 (origin/branch2)
+Author: NikolaNikolovskiFinki <nikola.nikolovski.2@students.finki.ukim.mk>
+Date:   Thu Apr 7 17:32:57 2022 +0200
+
+    Add quantities to the items.
+
+commit 8765badb16d741ea4fdc1699b849a99a4d4b3afc
+Author: NikolaNikolovskiFinki <nikola.nikolovski.2@students.finki.ukim.mk>
+Date:   Thu Apr 7 17:29:04 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 60ed237b2af0a1aae1276057ddd5331ee2e1eb8b (origin/master, origin/HEAD)
+Author: NikolaNikolovskiFinki <103200637+NikolaNikolovskiFinki@users.noreply.github.com>
+Date:   Thu Apr 7 16:51:49 2022 +0200
+
+    updated readme file
+
+commit dbcd89ce5185f3523203cddcdd3fcff9e3da1d68
+Author: NikolaNikolovskiFinki <103200637+NikolaNikolovskiFinki@users.noreply.github.com>
+Date:   Thu Apr 7 16:49:19 2022 +0200
+
+    Initial commit
+
+
+18. git commit -ammend "Modify item #4 and add item #6"  //менување на последниот commit
+
+19. git log   //ја листа историјата на сите commits
+commit 68851270535f7abaacf7b705808042de9e300bf3 (HEAD -> branch2)
+Author: NikolaNikolovskiFinki <nikola.nikolovski.2@students.finki.ukim.mk>
+Date:   Thu Apr 7 18:21:40 2022 +0200
+
+    Modify item #4 and add item #6
+
+commit 3e639d1ad4cd302c92ad60947c6a079af9f15c29 (origin/branch2)
+Author: NikolaNikolovskiFinki <nikola.nikolovski.2@students.finki.ukim.mk>
+Date:   Thu Apr 7 17:32:57 2022 +0200
+
+    Add quantities to the items.
+
+commit 8765badb16d741ea4fdc1699b849a99a4d4b3afc
+Author: NikolaNikolovskiFinki <nikola.nikolovski.2@students.finki.ukim.mk>
+Date:   Thu Apr 7 17:29:04 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 60ed237b2af0a1aae1276057ddd5331ee2e1eb8b (origin/master, origin/HEAD)
+Author: NikolaNikolovskiFinki <103200637+NikolaNikolovskiFinki@users.noreply.github.com>
+Date:   Thu Apr 7 16:51:49 2022 +0200
+
+    updated readme file
+
+commit dbcd89ce5185f3523203cddcdd3fcff9e3da1d68
+Author: NikolaNikolovskiFinki <103200637+NikolaNikolovskiFinki@users.noreply.github.com>
+Date:   Thu Apr 7 16:49:19 2022 +0200
+
+20. git checkout master  //префрлање на master branch
+    git merge branch1   //спојување branch1 со master
+
+21. git merge branch2   //спојување branch2 со master
+
+Во чекорот 21 настана конфликт
+Конфликтот го разрешив така што од branch1 ставките не ги сменив и ја додадов шестата ставка chocolate од branch2,
+а останатите ставки од branch2 ги избришав.
+
+Recursive merge стратегијата беше употребена.
+

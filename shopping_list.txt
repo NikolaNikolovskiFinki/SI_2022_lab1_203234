@@ -3,3 +3,5 @@ Bread x 4
 Cheese x 1
 Eggs x 5
 Yogurt x 1
+Chocolate x1
+
