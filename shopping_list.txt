@@ -2,4 +2,4 @@ Milk x 2
 Bread x 4
 Cheese x 1
 Eggs x 5
-Yogurt x 3
+Yogurt x 1
