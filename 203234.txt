@@ -1,0 +1,4 @@
+4. За клонирање на репозиториумот ја искористив следната команда
+git clone https://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@github.com/NikolaNikolovskiFinki/SI_2022_lab1_203234.git
+
+бидејќи репозиториумот е поставен private, потребно беше да направам токен и да го поставам пред @github.com/
